@@ -1,0 +1,27 @@
+{
+  "name": "parse-theme-object",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "__test__"
+    ]
+  },
+  "dependencies": {
+    "ramda": "0.25.0",
+    "traverse": "0.6.6"
+  },
+  "devDependencies": {
+    "eslint": "4.14.0",
+    "eslint-config-objectfoo": "0.5.0",
+    "jest": "22.0.4"
+  }
+}

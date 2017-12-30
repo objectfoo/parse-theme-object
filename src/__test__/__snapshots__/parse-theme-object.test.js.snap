@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stuff should blacklist properties 1`] = `
+Array [
+  Object {
+    "path": Array [
+      "a",
+    ],
+    "value": "a",
+  },
+]
+`;
+
+exports[`stuff should ignore functions 1`] = `
+Array [
+  Object {
+    "path": Array [
+      "a",
+    ],
+    "value": "a",
+  },
+]
+`;
+
+exports[`stuff should parse nested sections 1`] = `
+Array [
+  Object {
+    "path": Array [
+      "type",
+    ],
+    "value": "light",
+  },
+  Object {
+    "header": true,
+    "path": Array [
+      "common",
+    ],
+  },
+  Object {
+    "path": Array [
+      "common",
+      "black",
+    ],
+    "value": "#000",
+  },
+  Object {
+    "path": Array [
+      "common",
+      "white",
+    ],
+    "value": "#fff",
+  },
+  Object {
+    "path": Array [
+      "common",
+      "transparent",
+    ],
+    "value": "rgba(0, 0, 0, 0)",
+  },
+  Object {
+    "path": Array [
+      "common",
+      "fullBlack",
+    ],
+    "value": "rgba(0, 0, 0, 1)",
+  },
+  Object {
+    "header": true,
+    "path": Array [
+      "primary",
+    ],
+  },
+  Object {
+    "path": Array [
+      "primary",
+      "50",
+    ],
+    "value": "#prim50",
+  },
+  Object {
+    "path": Array [
+      "primary",
+      "100",
+    ],
+    "value": "#prim100",
+  },
+  Object {
+    "header": true,
+    "path": Array [
+      "secondary",
+    ],
+  },
+  Object {
+    "path": Array [
+      "secondary",
+      "50",
+    ],
+    "value": "#seco50",
+  },
+  Object {
+    "path": Array [
+      "secondary",
+      "100",
+    ],
+    "value": "#seco100",
+  },
+  Object {
+    "header": true,
+    "path": Array [
+      "shades",
+    ],
+  },
+  Object {
+    "header": true,
+    "path": Array [
+      "shades",
+      "dark",
+    ],
+  },
+  Object {
+    "header": true,
+    "path": Array [
+      "shades",
+      "dark",
+      "text",
+    ],
+  },
+  Object {
+    "path": Array [
+      "shades",
+      "dark",
+      "text",
+      "primary",
+    ],
+    "value": "rgba(255, 255, 255, 1)",
+  },
+  Object {
+    "path": Array [
+      "shades",
+      "dark",
+      "text",
+      "secondary",
+    ],
+    "value": "rgba(255, 255, 255, 0.7)",
+  },
+]
+`;
+
+exports[`stuff should parse provided object 1`] = `
+Array [
+  Object {
+    "path": Array [
+      "a",
+    ],
+    "value": "a",
+  },
+  Object {
+    "header": true,
+    "path": Array [
+      "start",
+    ],
+  },
+  Object {
+    "path": Array [
+      "start",
+      "b",
+    ],
+    "value": "b",
+  },
+]
+`;
+
+exports[`stuff should support optional start path as array 1`] = `
+Array [
+  Object {
+    "path": Array [
+      "b",
+    ],
+    "value": "b",
+  },
+]
+`;
+
+exports[`stuff should support optional start path as string 1`] = `
+Array [
+  Object {
+    "path": Array [
+      "b",
+    ],
+    "value": "b",
+  },
+]
+`;
