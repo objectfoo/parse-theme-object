@@ -1,5 +1,5 @@
 const traverse = require('traverse');
-const { pathOr, intersection } = require('ramda');
+const { pathOr, intersection, sortBy } = require('ramda');
 
 /**
  * @param {string[]} path
@@ -73,7 +73,8 @@ const parseObject = (data, options) => {
 		isBlacklisted = () => false;
 	}
 
-	return walkObject(root, isBlacklisted);
+	const result = walkObject(root, isBlacklisted);
+	return sortBy(item => item.path.join(), result);
 };
 
 module.exports = parseObject;

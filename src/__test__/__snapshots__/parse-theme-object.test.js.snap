@@ -25,12 +25,6 @@ Array [
 exports[`stuff should parse nested sections 1`] = `
 Array [
   Object {
-    "path": Array [
-      "type",
-    ],
-    "value": "light",
-  },
-  Object {
     "header": true,
     "path": Array [
       "common",
@@ -46,9 +40,9 @@ Array [
   Object {
     "path": Array [
       "common",
-      "white",
+      "fullBlack",
     ],
-    "value": "#fff",
+    "value": "rgba(0, 0, 0, 1)",
   },
   Object {
     "path": Array [
@@ -60,22 +54,15 @@ Array [
   Object {
     "path": Array [
       "common",
-      "fullBlack",
+      "white",
     ],
-    "value": "rgba(0, 0, 0, 1)",
+    "value": "#fff",
   },
   Object {
     "header": true,
     "path": Array [
       "primary",
     ],
-  },
-  Object {
-    "path": Array [
-      "primary",
-      "50",
-    ],
-    "value": "#prim50",
   },
   Object {
     "path": Array [
@@ -85,6 +72,13 @@ Array [
     "value": "#prim100",
   },
   Object {
+    "path": Array [
+      "primary",
+      "50",
+    ],
+    "value": "#prim50",
+  },
+  Object {
     "header": true,
     "path": Array [
       "secondary",
@@ -93,16 +87,16 @@ Array [
   Object {
     "path": Array [
       "secondary",
-      "50",
+      "100",
     ],
-    "value": "#seco50",
+    "value": "#seco100",
   },
   Object {
     "path": Array [
       "secondary",
-      "100",
+      "50",
     ],
-    "value": "#seco100",
+    "value": "#seco50",
   },
   Object {
     "header": true,
@@ -142,6 +136,12 @@ Array [
       "secondary",
     ],
     "value": "rgba(255, 255, 255, 0.7)",
+  },
+  Object {
+    "path": Array [
+      "type",
+    ],
+    "value": "light",
   },
 ]
 `;
